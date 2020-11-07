@@ -11,6 +11,12 @@ Selected python scripts for geoprocessing using open source geospatial resources
 -- f(z) can be the mean, median, count, diversity, etc.
 
 This script generates a gridded surface in GeoTiff format, based on one or more CSV files holding marked points (i.e., [x,y,z] with x and y being geospatial coordinates and z being a variable of interest to be summarized), using scipy.stats.binned_statistic_2d() and GDAL.
+
 Suitable for country and continental scale data processing. The output .tif will be LZW-compressed.
-Each CSV file may hold the data for a geographic region within the total area of interest.
+Each CSV file may hold the data for a geographic sub-region within the total area of interest.
+However, the content of the CSV files may not overlap spatially, as f(z) is added cell-by-cell to a zero raster for each CSV file.
+This strategy is very efficient, but may produce inaccurate results at "overlapping" grid cells (e.g., at the edge between two adjacebt sub-regions).
 A template GeoTiff is required that dictates the target grid.
+
+Johannes H. Uhl
+University of Colorado Boulder, USA
