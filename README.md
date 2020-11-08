@@ -21,5 +21,4 @@ However, the content of the CSV files may not overlap spatially, as f(z) is adde
 This strategy is very efficient, but may produce inaccurate results at "overlapping" grid cells (e.g., at the edge between two adjacebt sub-regions).
 A template GeoTiff is required that dictates the target grid.
 
-Johannes H. Uhl
-University of Colorado Boulder, USA
+Johannes H. Uhl, University of Colorado Boulder, USA
