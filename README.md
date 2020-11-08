@@ -1,9 +1,9 @@
-# geoprocessing
-Selected python scripts for geoprocessing using open source geospatial resources
+# Geoprocessing
+## Selected python scripts for geoprocessing using open source geospatial resources
 
 <img width="700" alt="java 8 and prio java 8  array review example" src="https://github.com/johannesuhl/geoprocessing/blob/main/img3.jpg">
 
-# binned_statistics_2d_XYZ_csv_to_geotiff.py
+## binned_statistics_2d_XYZ_csv_to_geotiff.py
 
 -- Rasterization of 2d point data (x,y) with an attribute z into a grid of arbitrary cellsize and spatial reference system, using a user-specified summary statistic f(z) applied at the grid-cell level.
 
